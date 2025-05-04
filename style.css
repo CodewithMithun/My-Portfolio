@@ -1,0 +1,279 @@
+/*bolierplate*/
+@font-face {
+    font-family: 'Gilroy';
+    src: url('Gilroy-Medium.ttf')format('truetype');
+font-weight: 500;
+font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy','sans-serif';
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    color: white;
+    scroll-behavior: smooth;
+}
+
+/*nav*/
+
+.nav{
+    height: 90px;
+    width: 100%px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 50px;
+}
+.nav h3 a{
+    text-decoration: none;
+    color: white;
+}
+.page2{
+    display: flex;
+    gap: 50px;
+}
+.page2 h3 a{
+    border-bottom: 3px solid transparent;
+    transition: border-bottom 2s ease;
+}
+.page2 h3 a:hover{
+    border-bottom: 3px solid white;
+}
+.dark-mode{
+    background-color: black;
+    color: white;
+}
+.light-mode{
+    background-color: white;
+    color: black;
+}
+.light-mode .nav h3 a{
+    background-color: white;
+    color: black;
+}
+.light-mode .page2 h3 a{
+    border-bottom: 3px solid transparent;
+}
+.light-mode .page2 h3 a:hover{
+    border-bottom: 3px solid black;
+}
+/*home*/
+.home{
+    height: 420px;
+    width: 100%;
+}
+.image{
+    display: flex;
+    justify-content: center;
+}
+.myImage{
+    height: 100px;
+    width: 100;
+    border-radius: 50%;
+}
+.line1{
+    text-align: center;
+}
+.line2{
+    text-align: center;
+    font-size: 30px;
+}
+.line3{
+    text-align: center;
+    font-size: 30px;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+}
+.mybtn{
+    height: 50px;
+    width: 150px;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    border: none;
+    background-color: white; /*this two line used for hover - mybtn*/
+    color:black;
+}
+.mybtn:hover{
+    background-color: wheat;
+    cursor: pointer;
+}
+.light-mode .mybtn{
+    background-color: black;
+    color: white;
+}
+.light-mode .mybtn:hover{
+    background-color: rgb(51, 47, 47);
+    
+}
+/*projects*/
+
+.projects{
+    height: 480px;
+    width: 100%;
+    margin-top: 20px;
+
+    text-align: center;
+}
+.boxes{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.box{
+    height: 380px;
+    width: 320px;
+    border: 2px solid white;
+    border-radius: 20px;
+}
+.box .Sms{
+    height: 100px;
+    margin-top: 90px;
+    border-radius: 20px;
+}
+.box h3{
+    margin: 10px;
+}
+.box .Portfolio{
+    height: 100px;
+    margin-top: 90px;
+    border-radius: 20px;
+} 
+.box .jdbc{
+    height: 100px;
+    margin-top: 90px;
+    border-radius: 20px;
+}
+.light-mode .projects{
+    background-color: white;
+    color: black;
+}
+.light-mode .box{
+    
+    border: 2px solid black;
+    border-radius: 20px;
+}
+.light-mode .box .Portfolio{
+border: 2px solid black;
+}
+.light-mode .box .jdbc{
+border: 2px solid black;
+}
+.light-mode .box .Sms{
+border: 2px solid black;
+}
+.skills{
+    height: 450px;
+    width: 100%;
+    text-align: center;  
+    
+}
+.images{
+    margin-top: 20px;
+    display: flex;
+}
+
+.html1{
+    height: 120px;
+    width: 120px;
+    border-radius: 20%;
+    margin-left: 610px;
+    border: 2px solid white;
+    
+}
+.images1{
+    display: flex;
+}
+.css{
+    display: flex;
+    margin-left: 463px;
+
+}
+.css1{
+    height: 120px;
+    width: 120px;
+    border-radius: 20%;
+    border: 2px solid white;
+}
+.dsa1{
+    display: flex;
+    margin-left: 180px;
+    border: 2px solid white;
+    
+}
+.dsa1{
+    height: 120px;
+    width: 120px;
+    border-radius: 20%;
+}
+.java1{
+    height: 120px;
+    width: 120px;
+    border-radius: 20%;
+    margin-top: 1px;
+    border: 2px solid white;
+}
+.light-mode .skills{
+    background-color: white;
+    color: black;
+}
+.light-mode css1{
+    border: 2px solid black;
+}
+.light-mode html1{
+    border: 2px solid black;
+}
+.light-mode java1{
+    border: 2px solid black;
+}
+.contact{
+    height: 520px;
+    width: 100%;
+    
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+.form label{
+    margin-left: 475px;
+}
+.form input{
+    height: 50px;
+    width: 400px;
+    border-radius: 10px;
+    margin-left: 475px;
+    border: none;
+}
+.form textarea{
+    height: 75px;
+    width: 400px;
+    border-radius: 10px;
+    margin-left: 475px;
+    border: none;
+}
+.form .btnSubmit{
+    height: 40px;
+    width: 150px;
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    margin-left: 600px;
+    margin-top: 15px;
+}
+.contact h1{
+    text-align: center;
+}
+.light-mode .contact{
+    background-color: white;
+    color: black;
+}
